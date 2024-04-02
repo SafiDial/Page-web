@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>cookies</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
+
+  <!-- External Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="node_modules/leaflet/dist/leaflet.js"></script>
+
+ 
+ <!-------------------------------- MOn style css----------------------------- -->
+  <style>
+       
+body {
+    margin: 80px; 
+    font-family: 'Arial', sans-serif; 
+    background-color: #f9f9f9; 
+}
+
+
+section {
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    padding: 20px; 
+}
+
+/* Style des titres de section */
+h2 {
+    color: #333; 
+    border-bottom: 2px solid #ddd; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+/* Animation de zoom au survol des sections */
+section:hover {
+    transform: scale(1.02); 
+    transition: transform 0.0s ease-in-out;
+}
+
+/* Animation de texte défilant */
+p {
+    animation-duration: 1s; 
+    animation-name: slidein; 
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%; 
+        width: 300%; 
+    }
+
+    to {
+        margin-left: 0%; /* se déplace vers la gauche et atteint la position normale (0%) */
+        width: 100%; /* occupe la largeur normale de la fenêtre */
+    }
+}
+
+        
+    </style>
+ 
+</head>
+<body>
+
+<!--------------------- Barre de navigation----------------------------------- -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Header et bouton de navigation -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="#">
+        <img src="mes photos/logo.png" alt="NettPro Logo" height="50" width="100" style="margin-top: -15px;">
+        
+      </a>
+    </div>
+
+    <!-- Liens de navigation -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Q S Nous.html">Qui sommes-nous ?</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gestion
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="Formation.html">Formation</a></li>
+            <li><a href="#">Rendez-vous</a></li>
+            <li><a href="#">Retours Clients</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!----------------------------------------Ma page------------------------------>
+
+
+<section id="mentions-legales"> <br>
+    <h2>Mentions légales</h2>
+    <p>
+        Bienvenue chez <strong>NettPro</strong> - votre partenaire de confiance pour les services de nettoyage.<br><br>
+        
+        <strong>Coordonnées :</strong><br>
+        Adresse : Brest 29200<br>
+        Adresse électronique : NettPro@gmail.fr<br>
+        Numéro de téléphone : +33 00 01 02 <br><br>
+        
+        <strong>Hébergeur :</strong><br>
+        Nom de l'hébergeur : Safi<br>
+        Adresse : 29200<br>
+        Adresse électronique : SAFI@gmail.com<br><br>
+
+        <strong>Registre du commerce :</strong><br>
+        Numéro d'enregistrement au registre du commerce : 010022
+    </p>
+</section>
+
+<section id="politique-cookies">  <br>
+    <h2>Politique de cookies</h2>
+    <p>
+        <strong>Explication des cookies :</strong> 
+        Nous utilisons des cookies pour améliorer l'expérience de navigation.
+    </p>
+    <p>
+        <strong>Types de cookies :</strong> 
+        Cookies de session, cookies analytiques.
+    </p>
+    <p>
+        <strong>Finalités des cookies :</strong> 
+        Les cookies sont utilisés à des fins d'analyse, d'amélioration de la convivialité du site, 
+        et pour personnaliser votre expérience en fonction de vos préférences.
+    </p>
+    <p>
+        <strong>Consentement :</strong> 
+        En utilisant notre site, vous consentez à l'utilisation de cookies conformément à cette politique.
+    </p>
+    <p>
+        <strong>Options de gestion des cookies :</strong> 
+        Vous pouvez gérer vos préférences en matière de cookies via les paramètres de votre navigateur 
+        ou en utilisant les outils de gestion des cookies disponibles sur notre site.
+    </p>
+</section>
+
+<section id="accessibilite"> <br>
+    <h2>Accessibilité</h2>
+    <p>
+        Chez <strong>NettPro</strong>, nous nous engageons à rendre notre site accessible à tous,
+        y compris aux personnes handicapées.<br><br>
+
+        <strong>Conformité aux normes :</strong><br>
+        Notre site web est conçu conformément aux directives d'accessibilité WCAG 2.1 
+        (Web Content Accessibility Guidelines) pour assurer une expérience utilisateur inclusive.<br><br>
+
+        <strong>Contact d'assistance :</strong><br>
+        Si vous rencontrez des difficultés d'accessibilité sur notre site, veuillez nous contacter à l'adresse
+         <a href="mailto:NettPro@gmail.fr">NettPro@gmail.fr</a> pour obtenir de l'assistance.<br><br>
+
+        <strong>Améliorations futures :</strong><br>
+        Nous nous engageons à travailler continuellement sur l'amélioration de l'accessibilité de notre site web. 
+        Vos commentaires et suggestions sont les bienvenus.
+    </p>
+</section>
+
+
+
+
+<div class="reseau">
+    <div class="rp"><p>Suivez-nous sur ! </p></div>
+    <div><i class='bx bxl-youtube' ></i></div>
+    <div><i class='bx bxl-facebook' ></i></div>
+    <div><i class='bx bxl-twitter'></i></div>
+    <div><i class='bx bxl-instagram'></i></div>
+    </div>
+
+
+
+<!-----------------------------FOOTER---------------------------------->    
+<footer>
+    <div class="ft">
+      <div class="ft1">
+          <h3>À propos de NettPro</h3>
+          <div class="ft11"><a href="Qui_Somme_Nous.html">Notre mission</a></div>
+          <div class="ft12"><a href="service.html">Services offerts</a></div>
+          <div class="ft13"><a href="Qui_Somme_Nous.html">Notre équipe</a></div>
+      </div>
+      <div class="ft2">
+          <h3>Liens</h3>
+          <div class="ft21"><a href="Formation.html">Formation</a></div>
+          <div class="ft22"><a href="RDV.html">Prendre un rendez-vous</a></div>
+          <div class="ft23"><a href="contact.html">Laissez un message</a></div>
+      </div>
+      <div class="ft3">
+          <h3>Explorer</h3>
+          <div class="ft31">Votre espace</div>
+          <div class="ft32">Nos missions</div>
+          <div class="ft33">Nos interventions</div>
+      </div>
+      <div class="ft4">
+          <h3>Contact</h3>
+          <div class="ft41">Adresse : 29200 Bretagne, Brest, France</div>
+          <div class="ft42">Téléphone : +33 7 67 11 60 24</div>
+          <div class="ft43">E-mail : NettPro@gmail.fr</div>
+      </div>
+  </div>
+  <div class="bas">
+    <br><br>
+    <p><a href="#mentions-legales">Mentions légales</a> | <a href="#politique-cookies">Politiques de cookies</a> | <a href="#accessibilite">Accessibilité</a></p>
+    <p>&copy; NettPro – 2024</p>
+</div>
+  
+    
+  </footer>
+  </body>
+  </html>
+  
+  

@@ -1,0 +1,326 @@
+/******************************************** Barre de navigation *************************************************/
+
+.navbar {
+   background: linear-gradient(45deg, #CBFFCD, #E0FBE0, #DFFCFF);
+}
+
+.carousel-inner img {
+   width: 100%;
+   margin: auto;
+}
+
+.carousel-caption h3 {
+   color: #fff ;
+   font-weight: bold;
+
+}
+
+
+/******************************************** Section Pourquoi choisir NettPro ************************************/
+
+.middle-section {
+   background-color: rgb(242, 255, 244);
+   background-size: cover;
+   padding: 100px; 
+   text-align: center;
+   margin-top: 30px; 
+   font-size: 16px;
+   text-transform: uppercase;
+}
+
+.col-sm-3:hover img {
+   transform: scale(1.05); 
+   transition: transform 0.3s ease; 
+}
+
+
+/******************************************** Section NettPro en chiffre page************************************/
+
+/* Conteneur principal */
+.informations {
+
+   margin-top: 30px;
+   margin-left: 10px;
+   margin-right: 10px;
+   background-color: rgb(242, 255, 244);
+   color: #333; 
+   text-transform: uppercase;
+   font-size: 13px;
+    
+}
+
+/* Titre */
+.informations h1 {
+     
+   padding-top: 30px;
+   padding-left: 20px;
+   font-family: monospace;
+   color:#354A34; 
+   font-size: 30px;
+   text-transform: uppercase; 
+   text-shadow: 2px 2px 4px rgba(175, 238, 116, 0.3);
+}
+
+/* Conteneur des statistiques */
+.statistiques {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+/* Styles pour les nombres */
+.statistique .nombre span {
+    font-size: 2.4rem;
+    font-weight: 600;
+     color: #A1ED84; 
+}
+
+
+.statistique p {
+    font-weight: 600;
+}
+.nombre,
+.statistique p {
+  text-align: center;
+
+ }
+
+
+
+
+
+
+/******************************************** ZONES D INTERVENTION *****************************************/
+
+
+.zone-intervention h2 {
+   text-align: center;
+   font-family: 'Comic Sans MS', cursive; /* Police de caractères amusante */
+   font-size: 36px; 
+   color: #324431; 
+   margin-bottom: 20px; 
+   text-transform: uppercase; 
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+ 
+
+
+.ul-container {
+   display: flex;
+   justify-content: center; /*les deux sections horizontalement */
+   position: relative;
+   font-weight: bold; 
+   color: #14470ff5;
+}
+
+.ul-container::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 2px; 
+   background-color: rgb(95, 253, 4); 
+}
+
+.section {
+   margin: 0 10px; /* Espacement entre les deux sections */
+}
+
+.section ul {
+   list-style: none;
+   padding: 0;
+}
+
+.section ul li {
+   margin-bottom: 5px;
+}
+
+
+
+/********************************************pour la carte  **********************************************/
+ 
+#map {
+   height: 400px;
+   width: 80%;
+   position:center;
+   margin-top: 50px;
+   box-shadow:0 0 0 3px rgba(2, 252, 52, 0.2); 
+}
+
+
+#contact-button {
+    text-align: center;
+    margin-top: 20px; 
+  
+}
+
+
+
+/********************************************Reseaux **********************************************/
+
+.reseau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-right: 100px;
+   
+}
+
+
+.reseau div {
+    margin: 0 5px;
+    
+}
+
+.reseau div i {
+    font-size: 40px;
+    color: rgb(6, 6, 9); /* Couleur d'icône */
+}
+
+.rp p {
+    margin: 0;
+    font-size: 20px; /* Taille du texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    font-weight: bold;
+}
+
+
+
+/******************************************** Footer  **********************************************/
+
+
+footer {
+    background: #F2FAF2;
+    margin-top: 60px;
+    text-align: center;
+    padding: 40px; /* la marge intérieure */
+    margin-top: 60px;
+}
+
+
+.ft {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bas p,
+.ft > div > div {
+    margin: 5px 0; /* Réduire les marges */
+    font-weight: 600; 
+    font-size: 14px; /* Réduire la taille de police */
+    padding: 4px; /* Réduire le rembourrage */
+}
+
+.ft a {
+   color: #222622;
+}
+footer h3 {
+   color: #0e430e;
+  font-family: serif;
+   
+}
+
+
+
+/****************** FORMULAIRES DE : CONCTACT, DEVIS ET FORMATION  *******************/
+
+
+.welcome-section {
+   text-align: center;
+   padding: 50px 0; 
+   background: linear-gradient(45deg, #CBFFCD, #E0FBE0, #DFFCFF);
+   margin-top: 50px;
+   color: #333; 
+   font-size: 18px; 
+   font-weight: bold;
+}
+
+#formationForm {
+   background-size: cover;
+   padding: 100px 0;
+  
+}
+.bg-1 {
+   background-color: rgba(0,0,0,0.6); 
+   color: #fff; 
+   padding: 20px;
+   border-radius: 10px; 
+}
+.form-group {
+   margin-bottom: 20px;
+}
+.form-control {
+   border-radius: 0; 
+}
+.Btn.Envoyer {
+  background-color: #333; 
+  color: #fff; 
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.Btn.Envoyer:hover {
+  background-color: #555; 
+}
+.container {
+  width: 80%;
+}
+
+
+
+
+/****************** FORMATION  *******************/
+
+
+
+
+.formation-list {
+  margin: 1rem auto;
+  text-align: center;
+  list-style: none;
+  }
+  
+  .formation {
+  display: inline-block;
+  width: 100%;
+  width: 400px;
+  margin: 10px;
+  font-size: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+  }
+  
+  .formation:hover {
+  transform: translateY(-0.5rem) scale(1.0125);
+  box-shadow: 0 0.5em 3rem -1rem #48f05e80;
+  }
+  
+  .formation-description {
+  padding: 1em 0.5em;
+  color: #515151;
+  }
+  
+  .formation-description > h2 {
+  margin: 0 0 0.5em;
+  }
+  
+  .formation-description > p {
+  margin: 0;
+  }
+  
+  .formation-image > img {
+  width: 100%;
+  }
+  
+  .formation-description p span {
+  padding-left: 5px;
+  }
+  
+

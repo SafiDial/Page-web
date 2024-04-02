@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FORMATION</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
+  <!-- External Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="node_modules/leaflet/dist/leaflet.js"></script>
+</head>
+ 
+
+<body>
+
+<!-- Barre de navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Header et bouton de navigation -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="#">
+        <img src="mes photos/logo.png" alt="NettPro Logo" height="50" width="100" style="margin-top: -15px;">
+        
+      </a>
+    </div>
+
+    <!----------------------------------- Liens de navigation ----------------------------------------------->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- Liens principaux -->
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Qui_Somme_Nous.html">Qui sommes-nous ?</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="devis.html">Devis</a></li>
+
+        <!-- Dropdown pour la gestion -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gestion
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="Formation.html">Formation</a></li>
+            <li><a href="RDV.html">Rendez-vous</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<style>
+  .image-text-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .image-text-container img {
+    width: 100%;
+    height: auto; 
+    max-height: 400px; 
+
+    display: block;
+    margin-top: 40px; 
+  }
+
+  .image-text-container .text-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    font-size: 18px; 
+    color: #032a01; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px; 
+    border-radius: 10px;  
+  }
+span{
+ 
+ font-weight: bold;
+}
+
+</style>
+
+<div class="image-text-container">
+  <img src="mes photos/formation.png" alt="Description de l'image">
+  <div class="text-container">
+    <h2>Bienvenue chez NettPro</h2>
+    <p>Découvrez nos formations spécialisées en nettoyage pour acquérir les compétences indispensables
+      et exceller dans votre carrière. Prêt à vous former avec les meilleurs ?</p><p><strong>Inscrivez-vous!</strong></p>
+  </div>
+</div>
+
+<ul class="formation-list">
+<div>
+    <li class="formation">
+        <img src="mes photos\Désinfection et Stérilisation.jpg" alt="Désinfection et Stérilisation" height="200"   width="250">
+        <div class="formation-description">
+            <h2>Désinfection et Stérilisation</h2>
+            <p> Formation Approfondie <span>479€!</span></p>
+        </div>
+    </li>
+    <li class="formation">
+        <img src="mes photos\Nettoyage Industriel.jpg" alt="Nettoyage Industriel"  height="200"   width="250">
+        <div class="formation-description">
+            <h2>Nettoyage Industriel</h2>
+            <p> Formation Expert <span>599€!</span></p>
+        </div>
+
+    </li>
+
+    <li class="formation">
+        <img src="mes photos\Nettoyage Hospitalier.jpg" alt="Nettoyage Hospitalier"  height="200"   width="250">
+        <div class="formation-description">
+            <h2>Nettoyage Hospitalier</h2>
+            <p> Devenez Expert <span> 449€!</span></p>
+        </div>
+      </div>
+
+    <div>
+    </li>
+    <li class="formation">
+        <img src="mes photos\Gestion des Déchets et Recyclage.jpg" alt="Gestion des Déchets et Recyclage"  height="200"   width="250">
+        <div class="formation-description">
+            <h2>Gestion des Déchets et Recyclage</h2>
+            <p>Formation Approfondie <span>479€!</span></p>
+        </div>
+    </li>
+    <li class="formation">
+        <img src="mes photos\Spécialiste en Nettoyage de Vitres.jpg" alt="Spécialiste en Nettoyage de Vitres" height="200"   width="250">
+        <div class="formation-description">
+            <h2>Spécialiste en Nettoyage de Vitres</h2>
+            <p>Devenez Expert <span> 449€!</span></p>
+        </div>
+    </li>
+    <li class="formation">
+        <img src="mes photos\Spécialiste en Aménagement Paysager.jpg" alt="Spécialiste en Aménagement Paysager" height="200"   width="250">
+        <div class="formation-description">
+            <h2>Spécialiste en Aménagement Paysager</h2>
+            <p>Formation Expert <span>599€!</span></p>
+        </div>
+      </div>
+    </li>
+    <li class="formation">
+      <img src="mes photos\Désinfection des Espaces Publics.jpg" alt=" Désinfection des Espaces Publics"  height="200"   width="250">
+      <div class="formation-description">
+          <h2> Désinfection des Espaces Publics</h2>
+          <p>Formation Approfondie <span>379€!</span></p>
+      </div>
+  </li>
+  <li class="formation">
+      <img src="mes photos\Nettoyage de Surfaces Délicates.jpg" alt="Nettoyage de Surfaces Délicates" height="200"   width="250">
+      <div class="formation-description">
+          <h2>Nettoyage de Surfaces Délicates</h2>
+          <p>Devenez Expert <span> 699€!</span></p>
+      </div>
+  </li>
+  <li class="formation">
+      <img src="mes photos\Gestion des Risques Chimiques.jpg" alt="Gestion des Risques Chimiques" height="200"   width="250">
+      <div class="formation-description">
+          <h2> Gestion des Risques Chimiques</h2>
+          <p>Formation Avancée <span>599€!</span></p>
+      </div>
+    </div>
+  </li>
+
+</ul>
+
+<!---------------------------------- FORMULAIRE D INSCRIPTION ---------------------------------------------->
+<div id="formationForm">
+    <div class="imageFond">
+      <div class="container">   
+        <div class="bg-1 p-4 rounded">
+          <h2 class="mb-4 text-light">Inscrivez-vous</h2>
+          <form   id="myForm" method="post" action="traitement_formulaire_formation.php">
+            <div class="form-group">
+              <label for="nom" class="text-light">Nom :</label>
+              <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez votre nom" required>  
+            </div>
+            <div class="form-group">
+              <label for="prenom" class="text-light">Prénom :</label>
+              <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+            </div>
+            <div class="form-group">
+              <label for="telephone" class="text-light">Téléphone :</label>
+              <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Entrez votre numéro de téléphone"  oninput="formatTelephone(this)" >
+              </div>
+            <div class="form-group">
+              <label for="email" class="text-light">Adresse e-mail :</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+            </div>
+            <div class="form-group">
+              <label for="type_service" class="text-light" readonly>Type de formation :</label>
+              <select class="form-control" id="type_service" name="type_formation" required>
+                <option value="" disabled selected hidden>Sélectionnez le type de service</option>
+                <option value="Nettoyage régulier">Formation Approfondie: Désinfection et Stérilisation</option>
+                <option value="Nettoyage ponctuel">Formation Expert: Nettoyage Industriel</option>
+                <option value="Nettoyage spécialisé">Devenez Expert: Nettoyage Hospitalier</option>
+                <option value="Nettoyage spécialisé">Formation Approfondie: Gestion des Déchets et Recyclage</option>
+                <option value="Nettoyage spécialisé">Devenez Expert: Spécialiste en Nettoyage de Vitres</option>
+                <option value="Nettoyage spécialisé">Formation Expert: Spécialiste en Aménagement Paysager</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date" class="text-light">Choisir la date :</label>
+              <input type="date" id="date" name="date" class="form-control" required>
+            </div>
+            
+            <script>
+              document.getElementById('date').min = new Date().toISOString().split('T')[0];
+            </script>
+
+            <div class="form-group">
+              <label for="message" class="text-light">Message :</label>
+              <textarea class="form-control" id="message" name="message" rows="3" placeholder="Entrez votre message" required></textarea>
+            </div>
+            <button type="submit" class="Btn Envoyer">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script>
+    function formatTelephone(input) {
+     var cleaned = input.value.replace(/\D/g, '');
+   
+     var formatted = '';
+     for (var i = 0; i < cleaned.length && i < 13; i++) {
+  
+       if (i === 4 || i === 7 || i === 9 || i === 11) {
+         formatted += '-';
+       }
+       formatted += cleaned[i];
+     }
+     
+     input.value = formatted;
+   }
+
+
+   </script>
+  
+   
+
+  
+  
+  
+   
+
+ 
+    <!-----------------------------RESEAUX--------------------------------->
+
+  <div class="reseau">
+    <div class="rp"><p>Suivez-nous sur ! </p></div>
+    <div><i class='bx bxl-youtube' ></i></div>
+    <div><i class='bx bxl-facebook' ></i></div>
+    <div><i class='bx bxl-twitter'></i></div>
+    <div><i class='bx bxl-instagram'></i></div>
+  </div>
+    
+    
+     
+    <!-----------------------------FOOTER---------------------------------->
+    
+<footer>
+  <div class="ft">
+    <div class="ft1">
+        <h3>À propos de NettPro</h3>
+        <div class="ft11"><a href="Qui_Somme_Nous.html">Notre mission</a></div>
+        <div class="ft12"><a href="service.html">Services offerts</a></div>
+        <div class="ft13"><a href="Qui_Somme_Nous.html">Notre équipe</a></div>
+    </div>
+    <div class="ft2">
+        <h3>Liens</h3>
+        <div class="ft21"><a href="Formation.html">Formation</a></div>
+        <div class="ft22"><a href="RDV.html">Prendre un rendez-vous</a></div>
+        <div class="ft23"><a href="contact.html">Laissez un message</a></div>
+    </div>
+    <div class="ft3">
+        <h3>Explorer</h3>
+        <div class="ft31">Votre espace</div>
+        <div class="ft32">Nos missions</div>
+        <div class="ft33">Nos interventions</div>
+    </div>
+    <div class="ft4">
+        <h3>Contact</h3>
+        <div class="ft41">Adresse : 29200 Bretagne, Brest, France</div>
+        <div class="ft42">Téléphone : +33 7 67 11 60 24</div>
+        <div class="ft43">E-mail : NettPro@gmail.fr</div>
+    </div>
+</div>
+<div class="bas">
+    <br><br>
+    <p><a href="cookies.html">Mentions légales</a> | <a href="cookies.html">Politiques de cookies</a> | 
+    <a href="cookies.html">Accessibilité</a></p>
+    <p>&copy; NettPro – 2024</p>
+</div>
+
+  
+</footer>
+
+
+
+
+</body>
+</html>
+

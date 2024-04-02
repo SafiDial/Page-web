@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Index</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
+  <!-- External Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="node_modules/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+
+<!---------------------------------- BARRE DE NAVIGATION--------------------------------------------- -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        
+      </button>
+     <a class="navbar-brand" href="#">
+        <img src="mes photos/logo.png" alt="NettPro Logo" height="50" width="100" style="margin-top: -15px;">
+        
+      </a>
+    
+    </div>
+
+<!----------------------------------- LIENS DE NAVIGATIONS ----------------------------------------------->
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href="index.html">Accueil</a></li>
+        
+        <li><a href="index.html#Qui_sme_Nous">Qui somme nous ?</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="devis.html">Devis</a></li>
+
+
+        <!-- Dropdown pour la gestion -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gestion
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="Formation.html">Formation</a></li>
+            <li><a href="RDV.html">Rendez-vous</a></li>
+            <li><a href="formulaire_administration.php">administrateur</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!------------------------------------ CAROUSSEL D IMAGES -------------------------------------------------->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+  <!-- ouverture de mes images  -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Contenu des diapositives -->
+  <div class="carousel-inner" role="listbox">
+   <!-- Diapositive 1 -->
+<div class="item active">
+  <img src="mes photos\CAROU3.jpg" alt="image1" class="d-block img-fluid" style="height: 600px;">
+  <div class="carousel-caption">
+    <h3>Proprété</h3>
+    <p>Bienvenue dans un univers où la propreté est primordiale.</p>
+  </div>
+</div>
+
+<!-- Diapositive 2 -->
+<div class="item">
+  <img src="mes photos/carou2.jpeg" alt="image2" class="d-block img-fluid" style="height: 600px;">
+  <div class="carousel-caption">
+    <h3>Espace étincelant</h3>
+    <p>La touche magique qui transforme l'ordinaire en extraordinaire.</p>
+  </div>
+</div>
+
+<!-- Diapositive 3 -->
+<div class="item">
+  <img src="mes photos/Ma premiere carousjpg.jpg" alt="image3" class="d-block img-fluid" style="height: 600px;">
+  <div class="carousel-caption">
+    <h3>Excellence du nettoyage</h3>
+    <p>Chaque détail compte dans notre quête de propreté exceptionnelle.</p>
+  </div>
+</div>
+
+  </div>
+  
+  <!-- Contrôles gauche et droite -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Précédent</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Suivant</span>
+  </a>
+</div>
+
+<!-------------------------------------- CONTENU PRINCIPAL - La Bande------------------------ -->
+<!-- Section NettPro -->
+<div class="container text-center">
+  <h3>NettPro</h3>
+  <p><em>Nous Intervenons Dans Divers Secteurs</em></p>
+  <p>Des Espaces Publics aux Résidences Privées, Nos Solutions Complètes de Nettoyage Redéfinissent la Propreté pour Tous.</p>
+  <br>
+  <br>
+  <video controls width="100%" height="380">
+    <source src="mov_bbb.mp4" type="video/mp4">
+    </video>
+  <br>
+  <br>
+  <br>
+
+<div class="row">
+<!-- Image 1 -->
+  <div class="col-sm-4">
+   <p><strong>Entretien d'Espaces Publics et Privés </strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+      <img src="mes photos/images.jpeg" class="img-circle person" alt="Nom aléatoire"></a>
+  <div id="demo" class="collapse">
+   <p>Explication :</p>
+   <p>Cette catégorie se concentre sur la maintenance des espaces ouverts au public ainsi que
+         des espaces résidentiels privés. Les services peuvent inclure le nettoyage de zones communes,
+         la gestion des déchets, l'entretien des jardins, etc</p>
+   <p>Objectif :</p>
+   <p> Garantir la propreté et l'hygiène dans les lieux fréquentés par le public, 
+        tout en fournissant des services de nettoyage adaptés aux besoins spécifiques des résidences privées.</p>
+  </div>
+  </div>
+<!-- Image 2 -->
+  <div class="col-sm-4">
+   <p><strong>Services de Propreté et Nettoyage Intégral </strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+      <img src="mes photos/images2.jpeg"" class="img-circle person" alt="Nom aléatoire"></a>
+  <div id="demo2" class="collapse">
+   <p>Explication</p>
+   <p>Cette catégorie se concentre sur la maintenance des espaces ouverts au public
+         ainsi que des espaces résidentiels privés. Les services peuvent inclure le nettoyage de zones communes, 
+         la gestion des déchets, l'entretien des jardins, etc.</p>
+   <p>Objectif</p>
+   <p> Garantir la propreté et l'hygiène dans les lieux fréquentés par le public,
+         tout en fournissant des services de nettoyage adaptés aux besoins spécifiques des résidences privées.</p>
+  </div>
+  </div>
+<!-- Image 3 -->
+  <div class="col-sm-4">
+   <p><strong>Nettoyage Sur-Mesure</strong></p><br>
+   <a href="#demo3" data-toggle="collapse">
+   <img src="mes photos/images3.jpeg"" class="img-circle person" alt="Nom aléatoire"> </a>
+  <div id="demo3" class="collapse">
+        <p>Explication :</p>
+        <p>Cette catégorie met en avant une gamme complète de solutions de nettoyage pour 
+        les entreprises ainsi que les particuliers. Elle vise à offrir des services sur mesure 
+        adaptés aux exigences spécifiques de chaque client, qu'il s'agisse d'un bureau, 
+        d'un espace commercial ou d'une résidence.</p>
+        <p>Objectif : </p>
+        <p>Proposer des solutions flexibles qui répondent efficacement aux besoins de nettoyage variés 
+        des clients professionnels et particuliers, en maintenant des normes élevées de propreté et de satisfaction client.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!----------------------------- POURQUOI CHOISIR NETTPRO?  ---------------------------------->
+
+<div class="middle-section" style="margin: 20px; position: relative;">
+<h2 style="background: linear-gradient(45deg, #DFFCFF, #E0FBE0, #DFFCFF);;">Pourquoi choisir NettPro ?</h2>
+ 
+ 
+  <div class="row" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px;">
+    <div class="col-sm-3">
+      <img src="mes photos/Qualité garantie .jpeg" alt="Image 1" class="img-responsive" style="width: 100%; height: 300px;">
+     <p style="color: black; margin-top: 10px;"> <strong>Qualité garantie</strong></p>
+    </div>
+    <div class="col-sm-3">
+      <img src="mes photos/compétence.jpeg" alt="Image 2" class="img-responsive" style="width: 100%; height:300px;">
+      <p style="color: black;margin-top: 10px;"> <strong>Compétence</strong></p>
+    </div>
+    <div class="col-sm-3">
+      <img src="mes photos/réactivité rapide.jpeg" alt="Image 3" class="img-responsive" style="width: 100%; height: 300px;">
+      <p style="color: black;margin-top: 10px;"> <strong>Réactivité rapide</strong></p>
+    </div>
+    <div class="col-sm-3">
+      <img src="mes photos/prix concurrentiel.jpeg" alt="Image 4" class="img-responsive" style="width: 100%; height:300px;">
+      <p style="color: black; margin-top: 10px;"><strong>Prix concurrentiel</strong></p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-----------------------------  NETTPRO EN CHIFFRE  Qui_somme_nous?---------------------------------->
+
+<div class="informations" id="Qui_sme_Nous"> <br>
+  <h1>NettPro en chiffre</h1>
+  <div class="statistiques">
+      <div class="statistique">
+          <div class="nombre" style="display: flex; justify-content: center;"><span>26</span></div>
+          <p style="text-align: center;">pays où nous opérons</p>
+      </div>
+      <div class="statistique">
+          <div class="nombre" style="display: flex; justify-content: center;"><span>287M</span></div>
+          <p>d'espaces nettoyés dans le monde entier</p>
+          <p>au 01/06/2002</p>
+      </div>
+      <div class="statistique">
+          <div class="nombre" style="display: flex; justify-content: center;"><span>136 K</span></div>
+          <p>agents de nettoyage</p>
+      </div>
+      <div class="statistique">
+          <div class="nombre" style="display: flex; justify-content: center;"><span>95%</span></div>
+          <p>de satisfaction client</p>
+      </div>
+      
+      <div class="statistique">
+          <div class="nombre" style="display: flex; justify-content: center;"><span>600M €</span></div>
+          <p>CA en 2023 </p>
+          
+      </div>
+     
+      <div class="statistique">
+          <div class="nombre" style="display: flex; justify-content: center;"><span>11,32 €</span></div>
+          <p>Cours de l'action au 09/01/2004</p>
+          <p><span>-0,09%</span></p>
+      </div>
+  </div>
+  <a href="Qui_Somme_Nous.html" class="cadre-lien" style="display: inline-block; border-radius: 50%; background: linear-gradient(45deg, #CBFFCD, #57e0ef, #E0FBE0 ); padding: 20px; text-decoration: none;">
+    <div style="color: white; font-weight: bold;">
+     + d'infos 
+  </div>
+</a>
+</div>
+
+
+
+
+
+
+
+<!-----------------------------ZONES D INTERVENTION ---------------------------------->
+<div class="zone-intervention">
+  <h2>Zone d'intervention</h2>
+  <div class="ul-container">
+    <div class="section">
+      <ul>
+        <li>Brest</li>
+        <li>Rennes</li>
+        <li>Quimper</li>
+        <li>Vannes</li>
+        <li>Lorient</li>
+      </ul>
+    </div>
+    <div class="section">
+      <ul>
+        <li>Lannion</li>
+        <li>Auray</li>
+        <li>Dinard</li>
+        <li>Morlaix</li>
+        <li>Pontivy</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-----------------------------LA CARTE ---------------------------------->
+
+<div>
+  <div id="map" style="margin: 50px auto;"></div>
+  <script>
+    var mymap = L.map('map').setView([48.390394, -4.486076], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(mymap);
+
+    L.marker([48.390394, -4.486076]).addTo(mymap)
+      .bindPopup('Brest, France')
+      .openPopup();
+
+  </script>
+<div id="contact-button">
+  <a href="contact.html" class="btn btn-primary btn-contact" style="background: linear-gradient(45deg, #DFFCFF, #E0FBE0, #DFFCFF); width: 200px; color: black;">CONTACT</a>
+  <a href="devis.html" class="btn btn-primary btn-contact" style="background: linear-gradient(45deg, #DFFCFF, #E0FBE0, #DFFCFF); width: 200px; color: black;">DEVIS</a>
+</div>
+
+
+</div>
+<br>
+<br>
+
+
+ 
+<!-----------------------------RESEAUX---------------------------------->
+
+
+
+<div class="reseau">
+<div class="rp"><p>Suivez-nous sur ! </p></div>
+<div><i class='bx bxl-youtube' ></i></div>
+<div><i class='bx bxl-facebook' ></i></div>
+<div><i class='bx bxl-twitter'></i></div>
+<div><i class='bx bxl-instagram'></i></div>
+</div>
+
+
+ 
+<!-----------------------------FOOTER---------------------------------->
+
+<footer>
+  <div class="ft">
+    <div class="ft1">
+        <h3>À propos de NettPro</h3>
+        <div class="ft11"><a href="Qui_Somme_Nous.html">Notre mission</a></div>
+        <div class="ft12"><a href="service.html">Services offerts</a></div>
+        <div class="ft13"><a href="Qui_Somme_Nous.html">Notre équipe</a></div>
+    </div>
+    <div class="ft2">
+        <h3>Liens</h3>
+        <div class="ft21"><a href="Formation.html">Formation</a></div>
+        <div class="ft22"><a href="RDV.html">Prendre un rendez-vous</a></div>
+        <div class="ft23"><a href="contact.html">Laissez un message</a></div>
+    </div>
+    <div class="ft3">
+        <h3>Explorer</h3>
+        <div class="ft31">Votre espace</div>
+        <div class="ft32">Nos missions</div>
+        <div class="ft33">Nos interventions</div>
+    </div>
+    <div class="ft4">
+        <h3>Contact</h3>
+        <div class="ft41">Adresse : 29200 Bretagne, Brest, France</div>
+        <div class="ft42">Téléphone : +33 7 67 11 60 24</div>
+        <div class="ft43">E-mail : NettPro@gmail.fr</div>
+    </div>
+</div>
+<div class="bas">
+  <br><br>
+  <p><a href="cookies.html">Mentions légales</a> | <a href="cookies.html">Politiques de cookies</a> | <a href="cookies.html">Accessibilité</a></p>
+  <p>&copy; NettPro – 2024</p>
+</div>
+
+  
+</footer>
+
+
+
+
+</body>
+</html>
+
